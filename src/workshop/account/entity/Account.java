@@ -10,12 +10,20 @@ public class Account {
 		System.out.println("Account 기본 생성자가 호출됨.");
 	}
 	
+	//생성자 중복정의 (constructor overloading)
+	public Account(String custId, String acctId, int balance) {
+		System.out.println("오버로딩된 생성자 호출됨");
+		this.custId = custId;
+		this.acctId = acctId;
+		this.balance = balance;
+	}
 	
 	//getter method
 	public String getCustId() {
 		return custId;
 	}
 	
+
 	// setter
 	public void setCustId(String custId) {
 		this.custId = custId;
