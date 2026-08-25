@@ -5,6 +5,12 @@ public class Account {
 	private String acctId;
 	private int balance;
 	
+	//default constructor 선언
+	public Account() {
+		System.out.println("Account 기본 생성자가 호출됨.");
+	}
+	
+	
 	//getter method
 	public String getCustId() {
 		return custId;

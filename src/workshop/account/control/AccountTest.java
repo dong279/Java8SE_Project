@@ -1,6 +1,6 @@
 package workshop.account.control;
 import workshop.account.entity.Account;
-
+// ctrl f11
 public class AccountTest {
 	public static void main(String[] args) {
 		Account account = new Account();
