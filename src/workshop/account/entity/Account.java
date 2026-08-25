@@ -18,6 +18,11 @@ public class Account {
 		this.balance = balance;
 	}
 	
+	@Override
+	public String toString() {
+		return "Account [고객변호=" + custId + ", 계좌번호=" + acctId + ", 잔액=" + balance + "]";
+	}
+
 	//getter method
 	public String getCustId() {
 		return custId;
