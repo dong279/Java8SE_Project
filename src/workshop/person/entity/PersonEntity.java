@@ -12,7 +12,6 @@ public class PersonEntity {
 //		this.ssn = ssn;
 //		this.address = address;
 //		this.phone = phone;
-		
 		setName(name);
 		setSsn(ssn);
 		setAddress(address);

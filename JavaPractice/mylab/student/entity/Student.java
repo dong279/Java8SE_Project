@@ -1,6 +1,6 @@
 package mylab.student.entity;
 
-import mylab.student.exception.InvalidGradeException;;
+import mylab.student.exception.InvalidGradeException;
 
 public class Student {
 	private String studentId;
@@ -12,14 +12,14 @@ public class Student {
 		this.studentId = studentId;
 		this.name = name;
 		this.major = major;
-		this.grade =grade;
+//		this.grade =grade;
 		setGrade(grade);
 	}
 	
 	public Student (String name, String major, int grade) throws InvalidGradeException{
 		this.name = name;
 		this.major = major;
-		this.grade = grade;
+//		this.grade = grade;
 		setGrade(grade);
 	}
 	
@@ -53,7 +53,7 @@ public class Student {
 
 	public void setGrade(int grade) throws InvalidGradeException {
 	    if (grade < 1 || grade > 4) {
-	        throw new InvalidGradeException("학년은 1~4 사이의 값이어야 합니다.", grade);
+	        throw new InvalidGradeException("학년은 1~4 사이의 값이어야 합니다.");
 	    }
 	    this.grade = grade;
 	}
