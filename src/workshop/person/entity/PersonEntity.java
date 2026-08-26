@@ -8,11 +8,15 @@ public class PersonEntity {
 	private String phone;
 	
 	public PersonEntity(String name, String ssn, String address, String phone) {
-		super();
-		this.name = name;
-		this.ssn = ssn;
-		this.address = address;
-		this.phone = phone;
+//		this.name = name;
+//		this.ssn = ssn;
+//		this.address = address;
+//		this.phone = phone;
+		
+		setName(name);
+		setSsn(ssn);
+		setAddress(address);
+		setPhone(phone);
 	}
 
 	public String getName() {
