@@ -36,6 +36,11 @@ public class EqualsTest {
 
         System.out.println(date1 == date2);
         System.out.println(date2 == date3);
+        strSet.add("gfs");
+        
+        for (String value: strSet) {
+        	System.out.println(value);
+        }
         
         if ( date1.equals(date2) ){
             System.out.println("동일한 날짜입니다.");
@@ -50,7 +55,14 @@ public class EqualsTest {
         System.out.println( date1 );
         System.out.println( date1.toString() );
         
-        
+        System.out.println( "HashSet <MyDate>===================" );   
+        Set<MyDate> dateSet = new HashSet<>();
+        dateSet.add(date1);
+        dateSet.add(date2);
+
+        for (MyDate myDate: dateSet) {
+        	System.out.println(myDate);
+        }
         
     }
     
