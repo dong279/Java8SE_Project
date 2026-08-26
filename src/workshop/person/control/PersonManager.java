@@ -45,5 +45,15 @@ public class PersonManager {
 		return genderCnt;
 	}
 	
-	public void showPerson()
+	public void showPerson(PersonEntity[] persons, String name) {
+		for (PersonEntity person : persons) {
+			if(person.getName().equals(name)) {
+				System.out.println("[이름] " + person.getName());
+				System.out.println("[성별] " + person.getGender());
+				System.out.println("[전화번호] " + person.getPhone());
+				System.out.println("[주소] " + person.getAddress());
+				break;
+			}
+		}
+	}
 }
