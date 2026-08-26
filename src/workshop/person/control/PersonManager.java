@@ -26,7 +26,13 @@ public class PersonManager {
 	
 	public void showPersons(PersonEntity[] persons) {
 		for (PersonEntity person : persons) {
-			System.out.println(person.getName());
+			System.out.println("[이름] " + person.getName() + "\t [성별] " + 
+					person.getGender() +  "\t [주소] " + person.getAddress());
 		}
+	}
+	
+	public int findByGender(PersonEntity[] persons, char gender) {
+		int genderCnt=0;
+		return genderCnt;
 	}
 }
