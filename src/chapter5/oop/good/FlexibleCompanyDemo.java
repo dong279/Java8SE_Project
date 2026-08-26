@@ -32,12 +32,13 @@ public class FlexibleCompanyDemo {
         
         
         for(Employee emp: emps) {
-        	System.out.println("현재 월급입니다.");
+        	System.out.print("현재 월급입니다.");
+        	System.out.println("부서명= " + ((Manager)emp).getDeptName() + " ");
         	System.out.println(emp.getName() + "의 현재 월급은 " + emp.getSalary() + " 만원 입니다.");
         	
         	emp.manageSalary(10);
         	
-        	System.out.println("올린 후의 월급입니다.");
+        	System.out.print("올린 후의 월급입니다.");
         	System.out.println(emp.getName() + "의 현재 월급은 " + emp.getSalary() + " 만원 입니다.");
         }
 //        System.out.println(mereClerk1.getName() + "의 현재 월급은 " + mereClerk1.getSalary() + " 만원 입니다.");
