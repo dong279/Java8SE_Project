@@ -3,8 +3,9 @@ package chapter5.oop.good;
 public class MereClerk extends Employee {
     
     public MereClerk (String name, double salary) {
-        this.name = name;
-        this.salary = salary;
+//        this.name = name;
+//        this.salary = salary;
+    	super(name,salary);
     }
     
     public void manageSalary(double rate) {
