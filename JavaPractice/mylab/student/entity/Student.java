@@ -39,6 +39,18 @@ public class Student {
 		return grade;
 	}
 	
+	public void setStudentId(String studentId) {
+		this.studentId = studentId;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setMajor(String major) {
+		this.major = major;
+	}
+
 	public void setGrade(int grade) throws InvalidGradeException {
 	    if (grade < 1 || grade > 4) {
 	        throw new InvalidGradeException("학년은 1~4 사이의 값이어야 합니다.", grade);
