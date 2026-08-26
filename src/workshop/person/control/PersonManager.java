@@ -10,6 +10,7 @@ public class PersonManager {
 		personManager.fillPersons(persons);
 		personManager.showPersons(persons);
 		System.out.println(personManager.findByGender(persons, '남') + "명 입니다.");
+		personManager.showPerson(persons, "김하늘");
 	}
 	
 	public void fillPersons(PersonEntity[] persons) {
