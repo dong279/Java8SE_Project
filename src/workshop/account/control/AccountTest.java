@@ -6,6 +6,10 @@ public class AccountTest {
 	public static void main(String[] args) {
 		// try - catch 구문
 		try {
+			Account account2 = new Account("A1200","221-22-3488",20000);
+			//출금
+			account2.withdraw(500000);
+			System.out.println(account2.toString());
 			Account account = new Account();
 			
 			//고객번호 : “A1100”, 계좌번호 : “221-22-3477”, 잔액 : 100000
@@ -19,12 +23,8 @@ public class AccountTest {
 			System.out.println("잔액 : " + account.getBalance());
 			
 			
-			Account account2 = new Account("A1200","221-22-3488",20000);
-			//출금
-			account2.withdraw(500000);
-			System.out.println(account2.toString());
 		} catch(InsufficientBalanceException exp) {
-			System.out.println("Error 메시지 = "+ exp.getMessage());
+			System.out.println("Error 메시지 = "+ exp.getMessage() + exp.getCurrentBalance());
 		}
 	}
 }
