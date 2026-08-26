@@ -1,8 +1,8 @@
 package chapter5.oop.good;
 
-public class InFlexibleCompanyDemo {
+public class FlexibleCompanyDemo {
     public static void main(String[] args) {
-        
+    	        
         MereClerk mereClerk1 = new MereClerk("철수", 100);
         MereClerk mereClerk2 = new MereClerk("영희", 100);
         Manager manager = new Manager("홍길동", 200);

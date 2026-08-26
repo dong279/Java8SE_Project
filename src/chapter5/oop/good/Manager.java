@@ -1,7 +1,7 @@
 package chapter5.oop.good;
 /* 관리자 클래스 */
 public class Manager extends Employee{
-	private String depName;
+	private String deptName;
 	
     public Manager (String name, double salary) {
     	super(name,salary);
@@ -9,11 +9,15 @@ public class Manager extends Employee{
     
     public Manager (String name, double salary,String deptName) {
     	this(name, salary);
-    	this.depName = deptName;
+    	this.deptName = deptName;
     }
     
     public void manageSalary(double rate) {
         salary = salary+ salary*(rate/100);
         salary += 20; // 20만원을 추가로 받는다.
     }
+    
+    public String getDeptName() {
+    	return deptName;
+	}
 }
